@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { setProducts } from "../redux/productSlice";
 import { Data } from "../assets/Data";
 import { useEffect } from "react";
+import Footer from "./Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -52,6 +53,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

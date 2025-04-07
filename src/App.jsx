@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Login from "./components/Login";
 import InstituteLogin from "./components/InstituteLogin";
 import { useLocation } from "react-router";
+import Footer from "./pages/Footer";
 
 function AppContent() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/InstituteLogin" element={<InstituteLogin />} />
+        <Route path="/Footer" element={<Footer />} />
       </Routes>
     </>
   );
